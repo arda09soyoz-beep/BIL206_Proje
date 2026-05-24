@@ -1,0 +1,17 @@
+can = 3 ~
+dusman_gucu = 5 ~
+benim_gucum = 7 ~
+
+madem (can > 0) <<
+    eger (benim_gucum > dusman_gucu) <<
+        goster("Dusmani yendin!") ~
+        can = 0 ~ 
+    >>
+    
+    eger (dusman_gucu >= benim_gucum) <<
+        goster("Hasar aldin!") ~
+        can = can - 1 ~
+    >>
+>>
+
+goster("Savas sona erdi.") ~
