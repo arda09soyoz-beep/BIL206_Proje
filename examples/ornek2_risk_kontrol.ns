@@ -1,0 +1,15 @@
+hesap_bakiye = 25000 ~
+gunluk_zarar = 1200 ~
+maksimum_izin = 1250 ~
+
+eger (gunluk_zarar > maksimum_izin) <<
+    goster("Kural ihlali! Hesap tehlikede.") ~
+>>
+
+eger (maksimum_izin >= gunluk_zarar) <<
+    goster("Guvendesiniz. Isleme devam edilebilir.") ~
+    
+    kalan_limit = maksimum_izin - gunluk_zarar ~
+    goster("Kalan gunluk zarar limitiniz:") ~
+    goster(kalan_limit) ~
+>>
