@@ -1,0 +1,10 @@
+sayac = 5 ~
+toplam = 0 ~
+
+madem (sayac > 0) <<
+    toplam = toplam + sayac ~
+    sayac = sayac - 1 ~
+>>
+
+goster("1'den 5'e kadar olan sayilarin toplami:") ~
+goster(toplam) ~
